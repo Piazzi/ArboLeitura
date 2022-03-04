@@ -14,7 +14,7 @@ const ActivityIndicatorElement = () => {
 const App = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#DFF2E7' }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#c1c1c1' }}>
             <View style={styles.container}>
                 <WebView
                     style={{ flex: 1 }}
