@@ -23,7 +23,6 @@ const App = () => {
                     domStorageEnabled={true}
                     onLoadStart={() => setVisible(true)}
                     onLoad={() => setVisible(false)}
-                    injectedJavaScript={cssChanges}
                 />
                 {visible ? <ActivityIndicatorElement /> : null}
             </View>
@@ -31,15 +30,9 @@ const App = () => {
     );
 };
 
-const cssChanges = `
-         document.getElementsByClassName('a-s-tb-sc-Ja a-s-tb-Kg a-N-l-Ba a-s-tb-sc-Ja-J')[0].style.backgroundColor = "#DFF2E7";
-         document.getElementsByClassName('h-sb-Ic h-R-d a-vu-w-d a-c-d a-N-l-Ba-d-ga')[0].remove();
-         document.getElementsByClassName('D-B')[0].style.borderBottom = "0px";
-    `
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#DFF2E7',
         marginTop: 20,
         flex: 1,
 
